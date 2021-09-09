@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFOTECH</title>
+    <link rel="stylesheet" href="u4.css">
+    <script src="js/ventas.js"></script>
+</head>
+<body>
+    <center>
+
+    <header>
+    <div class="enca"></div>
+        <h1>INFOTECH COMPUTER S.A.C</h1>
+        <h2>Jr. Ayacucho N° 436 - Huánuco <br>962808055</h2>
+    </div>
+    </header>
+
+    <section>
+        <div class="mv">
+            <div class="mvs">
+            <h3>MISIÓN</h3>
+            <var>
+                Ser la empresa lider en la comercializacion de equipos de cómputo, ya que el cliente es lo más importante para la empresa, por lo tanto debe tratarse de la mejor manera posible, ser en el futuro la empresa más reconocida con las mejores marcas de computadoras y accesorios.
+            </var>
+            </div>
+        <div class="mvs">
+            <h3>VISIÓN</h3>
+            <var class="">
+                Ofrecer un servicio de calidad a nuestros clientes de acuerdo a los requerimientos planeados. Ser la empresa lider en la venta de computadoras portátiles y de escritorio con las mejores marcas del mercado , para lo cual trabajaremos con estandares de calidad bien ejecutados para que los clientes nos prefieran.
+            </var>
+        </div>
+        
+        <div class="mvs">
+            <h3>OBJETIVO</h3> 
+            <var >
+            Brindar el mejor servicio en la venta de equipos de computo con los mejores precios del mercado computacional. Ser una empresa lider en la venta de equipos computacionales y brindar a nuestros clientres productos de la mejor calidad del mercado por que somos reconocidos hasta ahora como la mejor empresa en la venta de equipos de cómputo
+            </var>
+        </div>
+        </div>
+    </section>
+
+    <form name="productos">
+        <div class="prod">
+        <nav name="pr1">
+            <a type="button" href="#" class="ver" onclick="pt1()">DETALLES</a>
+            <p>Computador</p>
+            <p>S/ 8500.00</p>
+            <img class="imgpr" src="img/p1.jpg">
+             
+        </nav>
+        <nav name="pr2">
+            <a type="button" href="#" class="ver" onclick="pt2()">DETALLES</a>
+            <p>Parlante</p>
+            <p>S/ 950.00</p>
+            <img class="imgpr" src="img/p2.jpg">
+        </nav>
+        <nav name="pr3">
+            <a type="button" href="#" class="ver" onclick="pt3()">DETALLES</a>  
+            <p>Impresora</p>
+            <p>S/ 1600.00</p>
+            <img class="imgpr" src="img/p3.jpg">
+              
+        </nav>
+        <nav name="pr4">
+            <a type="button" href="#" class="ver" onclick="pt4()">DETALLES</a>
+            <p>Laptop</p>
+            <p>S/ 5400.00</p>
+            <img class="imgpr" src="img/p4.jpg"> 
+        </nav>
+        </div><br><br>       
+        <a type="button"  id="" class="btn-comprar" href="#" onclick="comprar()">COMPRAR</a><br><br>
+    </form>
+              
+    <div class="det1" id="det1">
+
+    </div>
+    <form name="ventas">
+    <div class="oculto fact">
+       
+        <!-- <div class="fac"> -->
+        <input type="text" class="enc pro" value="Producto" readonly>
+        <input type="text" class="enc pru" value="Precio Unitario" readonly>
+        <input type="text" class="enc cant" value="Cantidad" readonly>
+        <input type="text" class="enc pprod" value="Precio Producto" readonly><br>
+        
+        <input type="text" value="Ordenador" class="pro1 pro" readonly >
+        <input type="text" class="pru1 pru" id="" value="S/ 8500.00" readonly>
+        <input type="number" min="0" class="cant1 cant" id="cantOr"  onchange=" ppro()" placeholder="1">
+        <input type="text" placeholder="S/ 0.00" class="pprod1 pprod" id="por" readonly><br>
+
+        <input type="text" class="pro1 pro" value="Parlante" readonly >
+        <input type="text" class="pru1 pru" id="" value="S/ 950.00" readonly>
+        <input type="number"
+        class="cant1 cant" id="cantPar" onchange="ppro()" min="0" placeholder="1">
+        <input type="text" id="ppar" class="pprod1 pprod" placeholder="S/ 0.00" readonly><br>
+
+        <input type="text" value="Impresora" class="pro1 pro" readonly >
+        <input type="text" class="pru1 pru" id="" value="S/ 1600.00" readonly>
+        <input type="number" id="cantPr" class="cant1 cant" onchange="ppro()" min="0" placeholder="1">
+        <input type="text" id="ppr" class="pprod1 pprod" placeholder="S/ 0.00" readonly><br>
+
+        <input type="text" class="pro1 pro" value="Laptop" readonly >
+        <input type="text" class="pru1 pru" id="" value="S/ 5400.00" readonly>
+        <input type="number" class="cant1 cant" id="cantMon" onchange="ppro()" min="0" placeholder="1">
+        <input type="text" id="pmon" class="pprod1 pprod" placeholder="S/ 0.00" readonly><br>
+
+        <input type="text" id="" class="total" value="Precio sin IGV" readonly>
+        <input type="text" id="psigv" class="total1" readonly> <br>
+
+        <input type="text" id="" class="total" value="IGV 18%" readonly>
+        <input type="text" id="igv" class="total1" readonly> <br>
+
+        <input type="text" id="" value="TOTAL" class="total" readonly>
+        <input type="text" id="total" class="total1" readonly><br>
+
+        <input type="submit" class="imp" onclick="imprimir()" value="IMPRIMIR">
+         
+        <input type="reset" class="imp" value="LIMPIAR">
+        
+    </div>
+    
+    <div  id="imprimir">
+        
+    </div>
+    <a class="lt" href="index.html">LIMPIAR TODO</a>
+    </form>
+<footer>
+    <a class="pi" href="https://web.facebook.com/"><img class="ifoot" src="img/fac.png"></a>
+    <a class="pi" href="https://web.whatsapp.com/"><img class="ifoot" src="img/wat.png"></a>
+    <a class="pi" href="https://mail.google.com/"><img class="ifoot" src="img/gma.png"></a>
+</footer>
+</center>
+</body>
+</html>
